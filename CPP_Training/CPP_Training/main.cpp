@@ -6,16 +6,18 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    int a = 5;
-    int b(3);
-    int c{2};
-    int result;
+#define PI 3.14159
+#define NEWLINE '\n'
+
+int main(void) {
+    double radius = 5.0;
+    double circle;
     
-    a = a + b;
-    result = a - c;
-    std::cout << result << std::endl;
+    circle = 2 * PI * radius;
+    cout << circle;
+    cout << NEWLINE;
     
     return 0;
 }
