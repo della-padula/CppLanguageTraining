@@ -8,7 +8,14 @@
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int a = 5;
+    int b(3);
+    int c{2};
+    int result;
+    
+    a = a + b;
+    result = a - c;
+    std::cout << result << std::endl;
+    
     return 0;
 }
