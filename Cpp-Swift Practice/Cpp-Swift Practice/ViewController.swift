@@ -15,16 +15,16 @@ class ViewController: UIViewController {
         let cppItem = GreetingWrapper();
         
         cppItem.helloWorld()
-        print(cppItem.getText())
+        print(cppItem.getText() ?? "nil")
         cppItem.setText("This is test string")
-        print(cppItem.getText())
+        print(cppItem.getText() ?? "nil")
         
         
         let cppItem2 = GreetingWrapper(text: "Hi my name is cpp");
-        print(cppItem2?.getText())
+        print(cppItem2?.getText() ?? "nil")
         
         cppItem2?.setNumber(33)
-        print(cppItem2?.getNumber())
+        print(cppItem2?.getNumber() ?? "nil")
     }
     
     
